@@ -1,0 +1,31 @@
+:root{
+    --colour-primary:#A7A9AC; 
+    --colour-primary-dark: #636466;
+    --colour-primary-darker: #231F20;
+    --colour-blue-dark: #00588A;
+    --colour-blue-light:#007DBE;
+    --colour-babyblue1: #00ABBD; 
+    --colour-babyblue2: #54C6D3;
+    --colour-babyblue3: #00B7C7;
+}
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%; /*10px*/
+
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    background-image: linear-gradient(to bottom right, var(--colour-babyblue1),var(--colour-blue-light));
+    min-height: 200vh;
+}

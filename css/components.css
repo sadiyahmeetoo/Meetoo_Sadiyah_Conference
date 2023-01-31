@@ -1,0 +1,285 @@
+/*-------------Header--------------*/
+/*Logo*/
+.logo{
+    height: 8rem;
+}
+
+/*Search*/
+.search{
+ flex: 0 0 40%;
+ display: flex;
+}
+
+.search_input{
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+
+    background-image: linear-gradient(to bottom right, var(--colour-babyblue1),var(--colour-blue-light));
+    border: none;
+    padding: 0.7rem 2rem;
+    border-radius: 15px;
+    width: 90%;
+    transition: all .4s;
+
+    margin-right: -3rem;
+}
+
+.search_input:focus {
+    width: 100%;
+    outline: 1px solid var(--colour-primary);
+}
+
+.search_button{
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+    color: var(--colour-primary-dark);
+}
+
+.search_button:active{
+    transform: translateY(2px);
+}
+
+/*User Navigation*/
+.user-nav{
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+
+}
+
+.user-nav>*{
+    display: flex;
+    cursor: pointer;
+    height: 100%;
+    padding: 0 2rem;
+    align-items: center;
+}
+
+.user-nav>*:hover{
+    background-color: var(--colour-primary);
+}
+
+.user-nav_icon-box{
+    position: relative;
+}
+
+.user-nav_icon{
+    color: var(--colour-primary-dark);
+    font-size: 2.5rem;
+}
+
+.user-nav_notif{
+    border-radius: 50%;
+    height: 1.75rem;
+    width: 1.75rem;
+    background-color: var(--colour-blue-light);
+    color: azure;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: 1.9rem;
+    right: 1.2rem;
+
+}
+
+.user-nav_user-box{
+
+}
+
+.user-nav_profile{
+    color: var(--colour-primary-dark);
+    height: 3.5rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.user-nav_username{
+
+}
+
+/*-------------Side Navigation--------------*/
+/*Navigator*/
+.side-nav{
+    list-style: none;
+    font-size: 1.4rem;
+    margin-top: 3.5rem;
+}
+
+.side-nav_item{
+    position: relative;
+}
+
+.side-nav_item:not(:last-child){
+    margin-bottom: 0.5rem;
+}
+
+.side-nav_item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    background-color: var(--colour-babyblue3);
+    height: 100%;
+
+    transform: scaleY(0);
+    transition: transform 0.5s, width 0.5s 0.2s;
+}
+
+.side-nav_item:hover::before{
+    transform: scaleY(1);
+    width: 100%;
+}
+
+.side-nav_link{
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 1.5rem 3rem;
+    display: block;
+    z-index: 100;
+    position: relative;
+}
+
+.side-nav_icon{
+    margin-right: 2rem;
+}
+
+/*copyright*/
+.copyright{
+    text-align: center;
+    color: var(--colour-primary);
+    padding: 2rem;
+}
+
+/*-------------Main Content--------------*/
+
+.banner{
+    display: flex;
+}
+
+.banner_photo{
+    width: 100%;
+    height: 25rem;
+}
+
+.title{
+    padding: 1rem;
+    text-align: center;
+    font-size: large;
+    background-color: lightblue;
+}
+
+.detail{
+    
+    background-color: var(--colour-primary);
+    display: flex;
+}
+
+.detail_section1{
+    flex: 1;
+}
+
+.detail_section1_box{
+    background-color: var(--colour-babyblue3);
+    margin: 3rem;
+    z-index: 100;
+    position: relative;
+    padding: 0.5rem;
+    font-size: medium;
+
+}
+
+.detail_section2{
+    flex: 0 0 40%;
+    font-size: medium;
+}
+
+.detail_section2_box{
+    margin:3rem;
+    margin-left: 0;
+    background-color: var(--colour-babyblue3);
+    padding: 0.5rem;
+
+}
+
+
+.footer_icon-box{
+    display: flex;
+    cursor: pointer;
+    height: 100%;
+    padding: 0 2rem;
+    align-items: center;
+}
+
+.footer_icon{
+    color: var(--colour-primary-dark);
+    font-size: 2.5rem;
+}
+
+.footer_icon-box>*:hover{
+    background-color: var(--colour-primary);
+}
+
+.footer_icon-box{
+    position: relative;
+}
+
+/*------------Page 2: Tour---------------------*/
+.tour_title{
+    padding: 0.2rem;
+    text-align: center;
+    font-size: small;
+    background-color: lightblue;
+}
+
+.tour-container{
+    font-size: small;
+}
+
+.tour-container_section{
+    display: flex;
+}
+
+.venue{
+    flex: 0 0 50%;
+    
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+.travel{
+    flex: 1;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+.accommodation{
+    flex: 0 0 50%;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+.sightseeing{
+    flex: 1;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+.tour-search_button{
+    background-color: var(--colour-primary-dark);
+    cursor: pointer;
+    color: white;
+    align-items: center;
+    border-radius: 15px;
+    padding: 0.5rem;
+    
+}
+
+.tour-search_button:active{
+    transform: translateY(2px);
+}
